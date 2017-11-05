@@ -1,4 +1,4 @@
-package com.notes.zk.newnotes;
+package com.notes.zk.newnotes.activiry;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,7 +7,10 @@ import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +24,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
+import com.notes.zk.newnotes.R;
+import com.notes.zk.newnotes.adapter.FragmentAdapter;
+import com.notes.zk.newnotes.fragment.CardsFragment;
+import com.notes.zk.newnotes.fragment.DialogsFragment;
+import com.notes.zk.newnotes.fragment.WidgetsFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -28,11 +39,13 @@ public class MainActivity extends AppCompatActivity
     private ImageView img_page_start;
     private DrawerLayout drawer;
     private RelativeLayout relative_main;
+    private ViewPager app_bar_main_vp;
+    private TabLayout app_bar_main_tabl;
+    private Toolbar toolbar;
+
     private final int MESSAGE_SHOW_DRAWER_LAYOUT = 0x001;
     private final int MESSAGE_SHOW_START_PAGE = 0x002;
-
     private Context mContext;
-
     Handler mHandler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -76,9 +89,11 @@ public class MainActivity extends AppCompatActivity
 
         mContext = this;
 
-        initVeiw();
+        initView();
 
         initStartPage();
+
+        initViewPage();
     }
 
     private void initStartPage(){
@@ -87,10 +102,8 @@ public class MainActivity extends AppCompatActivity
         mHandler.sendEmptyMessageDelayed(MESSAGE_SHOW_START_PAGE, 3*1000);
     }
 
-
-
-    private void initVeiw(){
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    private void initView(){
+        toolbar = (Toolbar) findViewById(R.id.app_bar_main_toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -114,6 +127,50 @@ public class MainActivity extends AppCompatActivity
         relative_main = (RelativeLayout) findViewById(R.id.relative_main);
         img_page_start = findViewById(R.id.img_page_start);
     }
+
+    private void initViewPage(){
+        app_bar_main_vp = findViewById(R.id.app_bar_main_vp);
+        app_bar_main_tabl = findViewById(R.id.app_bar_main_tabl);
+
+        List<String> titles = new ArrayList<>();
+        titles.add(getString(R.string.tab_title_main_1));
+        titles.add(getString(R.string.tab_title_main_2));
+        titles.add(getString(R.string.tab_title_main_3));
+        app_bar_main_tabl.addTab(app_bar_main_tabl.newTab().setText(titles.get(0)));
+        app_bar_main_tabl.addTab(app_bar_main_tabl.newTab().setText(titles.get(1)));
+        app_bar_main_tabl.addTab(app_bar_main_tabl.newTab().setText(titles.get(2)));
+
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(new CardsFragment());
+        fragments.add(new DialogsFragment());
+        fragments.add(new WidgetsFragment());
+
+        app_bar_main_vp.setOffscreenPageLimit(2);
+
+        FragmentAdapter mFragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragments, titles);
+        app_bar_main_vp.setAdapter(mFragmentAdapter);
+        app_bar_main_tabl.setupWithViewPager(app_bar_main_vp);
+        app_bar_main_tabl.setTabsFromPagerAdapter(mFragmentAdapter);
+
+        app_bar_main_vp.addOnPageChangeListener(mOnPageChangeListener);
+    }
+
+    private ViewPager.OnPageChangeListener mOnPageChangeListener = new ViewPager.OnPageChangeListener() {
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+        }
+
+        @Override
+        public void onPageSelected(int position) {
+
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
+
+        }
+    };
 
     @Override
     public void onBackPressed() {
@@ -166,7 +223,6 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main_drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
