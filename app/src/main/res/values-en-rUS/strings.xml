@@ -12,9 +12,6 @@
     <string name="tab_title_main_2">Dialogs</string>
     <string name="tab_title_main_3">Widgets</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="main_card_title">Title goes here</string>
     <string name="main_card_title_short">Title</string>
     <string name="main_card_subtitle">Subtitle here</string>

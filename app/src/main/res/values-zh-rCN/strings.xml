@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">新笔记</string>
+
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+
+    <string name="action_settings">设置</string>
+
+    <string name="app_designed_by">Designed by ZhuKun</string>
+
+    <string name="tab_title_main_1">卡片</string>
+    <string name="tab_title_main_2">对话框</string>
+    <string name="tab_title_main_3">控件</string>
+
+    <string name="main_card_title">标题</string>
+    <string name="main_card_title_short">标题</string>
+    <string name="main_card_subtitle">副标题</string>
+    <string name="main_card_details">详细信息</string>
+    <string name="main_card_button_1">按钮 1</string>
+    <string name="main_card_button_2">按钮 2</string>
+    <string name="main_flat_button_1_clicked">平面按钮 1</string>
+    <string name="main_flat_button_2_clicked">平面按钮 2</string>
+</resources>
