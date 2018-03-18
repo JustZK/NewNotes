@@ -1,4 +1,4 @@
-package com.notes.zk.newnotes.activiry;
+package com.notes.zk.newnotes.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity
     private TabLayout app_bar_main_tabl;
     private Toolbar toolbar;
 
-    private final int MESSAGE_SHOW_DRAWER_LAYOUT = 0x001;
-    private final int MESSAGE_SHOW_START_PAGE = 0x002;
+    private final int MESSAGE_SHOW_DRAWER_LAYOUT = 0x01;
+    private final int MESSAGE_SHOW_START_PAGE = 0x02;
     private Context mContext;
     Handler mHandler = new Handler(){
         @Override
