@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
     private DrawerLayout drawer;
     private RelativeLayout relative_main;
     private ViewPager app_bar_main_vp;
-    private TabLayout app_bar_main_tabl;
+    private TabLayout app_bar_main_tl;
     private Toolbar toolbar;
 
     private final int MESSAGE_SHOW_DRAWER_LAYOUT = 0x01;
@@ -98,15 +98,15 @@ public class MainActivity extends AppCompatActivity
 
     private void initStartPage(){
         relative_main.setVisibility(View.VISIBLE);
-        Glide.with(mContext).load(R.mipmap.logo_round).into(img_page_start);
+//        Glide.with(mContext).load(R.mipmap.logo_round).into(img_page_start);
         mHandler.sendEmptyMessageDelayed(MESSAGE_SHOW_START_PAGE, 3*1000);
     }
 
     private void initView(){
-        toolbar = (Toolbar) findViewById(R.id.app_bar_main_toolbar);
+        toolbar = findViewById(R.id.app_bar_main_tb);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -130,15 +130,15 @@ public class MainActivity extends AppCompatActivity
 
     private void initViewPage(){
         app_bar_main_vp = findViewById(R.id.app_bar_main_vp);
-        app_bar_main_tabl = findViewById(R.id.app_bar_main_tabl);
+        app_bar_main_tl = findViewById(R.id.app_bar_main_tl);
 
         List<String> titles = new ArrayList<>();
         titles.add(getString(R.string.tab_title_main_1));
         titles.add(getString(R.string.tab_title_main_2));
         titles.add(getString(R.string.tab_title_main_3));
-        app_bar_main_tabl.addTab(app_bar_main_tabl.newTab().setText(titles.get(0)));
-        app_bar_main_tabl.addTab(app_bar_main_tabl.newTab().setText(titles.get(1)));
-        app_bar_main_tabl.addTab(app_bar_main_tabl.newTab().setText(titles.get(2)));
+        app_bar_main_tl.addTab(app_bar_main_tl.newTab().setText(titles.get(0)));
+        app_bar_main_tl.addTab(app_bar_main_tl.newTab().setText(titles.get(1)));
+        app_bar_main_tl.addTab(app_bar_main_tl.newTab().setText(titles.get(2)));
 
         List<Fragment> fragments = new ArrayList<>();
         fragments.add(new CardsFragment());
@@ -149,8 +149,8 @@ public class MainActivity extends AppCompatActivity
 
         FragmentAdapter mFragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragments, titles);
         app_bar_main_vp.setAdapter(mFragmentAdapter);
-        app_bar_main_tabl.setupWithViewPager(app_bar_main_vp);
-        app_bar_main_tabl.setTabsFromPagerAdapter(mFragmentAdapter);
+        app_bar_main_tl.setupWithViewPager(app_bar_main_vp);
+        app_bar_main_tl.setTabsFromPagerAdapter(mFragmentAdapter);
 
         app_bar_main_vp.addOnPageChangeListener(mOnPageChangeListener);
     }

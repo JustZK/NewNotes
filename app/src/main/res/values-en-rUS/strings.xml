@@ -1,17 +1,14 @@
 <resources>
     <string name="app_name">NewNotes</string>
-
+    <string name="ok">OK</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
-
     <string name="app_designed_by">Designed by ZhuKun</string>
-
     <string name="tab_title_main_1">Cards</string>
     <string name="tab_title_main_2">Dialogs</string>
-    <string name="tab_title_main_3">Widgets</string>
-
+    <string name="tab_title_main_3">Widgetopen editors</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="main_card_title">Title goes here</string>
     <string name="main_card_title_short">Title</string>
     <string name="main_card_subtitle">Subtitle here</string>
@@ -20,4 +17,7 @@
     <string name="main_card_button_2">ACTION 2</string>
     <string name="main_flat_button_1_clicked">Flat Button 1</string>
     <string name="main_flat_button_2_clicked">Flat Button 2</string>
+    <string name="dialog_rounded_shape">Rounded Dialog</string>
+    <string name="cancel">Cancel</string>
+    <string name="sure">Sure</string>
 </resources>
