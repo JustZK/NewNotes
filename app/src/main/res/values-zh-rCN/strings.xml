@@ -20,4 +20,5 @@
     <string name="main_flat_button_1_clicked">平面按钮 1</string>
     <string name="main_flat_button_2_clicked">平面按钮 2</string>
     <string name="hello_blank_fragment">你好空白片段</string>
+    <string name="simple_dialog">简单对话框</string>
 </resources>
