@@ -1,34 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/main_background"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <android.support.v4.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <include layout="@layout/card_main_1" />
-
-        <include layout="@layout/card_main_2" />
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <include layout="@layout/card_main_4_1" />
+            <include
+                layout="@layout/card_main_1"
+                bind:onClickListener="@{onClickListener}" />
 
-            <include layout="@layout/card_main_4_2" />
+            <include
+                layout="@layout/card_main_2"
+                bind:onClickListener="@{onClickListener}" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include layout="@layout/card_main_4_1" />
+
+                <include layout="@layout/card_main_4_2" />
+            </LinearLayout>
+
+            <include layout="@layout/card_main_3" />
+
+            <!--<include layout="@layout/ad_banner_main" />-->
+
         </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
-        <include layout="@layout/card_main_3" />
-
-        <!--<include layout="@layout/ad_banner_main" />-->
-
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+</layout>
