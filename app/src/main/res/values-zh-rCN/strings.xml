@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">新笔记</string>
-    <string name="ok">好的</string>
     <string name="navigation_drawer_open">打开导航抽屉</string>
-    <string name="dialog_rounded_shape">圆角Dialog</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="ok">好的</string>
     <string name="cancel">取消</string>
     <string name="sure">确认</string>
-    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="dialog_rounded_shape">圆角对话框</string>
     <string name="action_settings">设置</string>
     <string name="app_designed_by">Designed by ZhuKun</string>
     <string name="tab_title_main_1">卡片</string>
@@ -21,4 +21,15 @@
     <string name="main_flat_button_2_clicked">平面按钮 2</string>
     <string name="hello_blank_fragment">你好空白片段</string>
     <string name="simple_dialog">简单对话框</string>
+    <string name="main_dialog_simple_title">有标题的简单对话框</string>
+    <string name="main_dialog_single_choice">单选对话框</string>
+    <string name="main_dialog_multi_choice">多选对话框</string>
+    <string name="main_dialog_progress_title">进度条对话框...</string>
+    <string name="main_dialog_progress">进度条对话框</string>
+    <string name="main_dialog_data_picker">日期选择对话框</string>
+    <string name="main_dialog_data_time">时间选择对话框</string>
+    <string name="main_dialog_bottom">底部对话框</string>
+    <string name="main_dialog_fullscreen">全屏对话框</string>
+    <string name="main_popup_menu">Popup Menu</string>
+    <string name="main_dialog_simple_message">材料的比拟是合理空间和运动系统的统一理论。\\n这种材料以触觉现实为基础，灵感来源于纸和油墨的研究，但技术先进，具有开放的想象力和神奇性。</string>
 </resources>

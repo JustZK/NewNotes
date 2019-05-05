@@ -21,4 +21,15 @@
     <string name="cancel">Cancel</string>
     <string name="sure">Sure</string>
     <string name="simple_dialog">Simple dialog</string>
+    <string name="main_dialog_simple_title">A simple dialog</string>
+    <string name="main_dialog_single_choice">main_dialog_multi_choice</string>
+    <string name="main_dialog_multi_choice">Multi choice dialog</string>
+    <string name="main_dialog_progress_title">Progress dialog...</string>
+    <string name="main_dialog_progress">Progress dialog</string>
+    <string name="main_dialog_data_picker">Date Picker Dialog</string>
+    <string name="main_dialog_data_time">Time Picker Dialog</string>
+    <string name="main_dialog_bottom">Bottom Dialog</string>
+    <string name="main_dialog_fullscreen">Fullscreen Dialog</string>
+    <string name="main_popup_menu">Popup Menu</string>
+    <string name="main_dialog_simple_message">\"A material metaphor is the unifying theory of a rationalized space and a system of motion. \"         \"\\nThe material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.\"</string>
 </resources>

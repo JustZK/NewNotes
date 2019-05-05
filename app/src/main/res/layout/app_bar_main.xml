@@ -49,9 +49,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            android:visibility="visible"
             android:onClick="@{onClickListener}"
-            app:srcCompat="@drawable/ic_add_white_24dp" />
+            android:src="@drawable/ic_add_white_24dp"
+            android:visibility="gone"
+            app:layout_scrollFlags="scroll|enterAlways" />
 
     </android.support.design.widget.CoordinatorLayout>
 </layout>

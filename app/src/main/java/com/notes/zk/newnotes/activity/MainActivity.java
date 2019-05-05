@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity
     private final int MESSAGE_SHOW_DRAWER_LAYOUT = 0x01;
     private final int MESSAGE_SHOW_START_PAGE = 0x02;
 
+    private boolean showPageStart = true;
+
     private MainActivityHandler mainActivityHandler;
     private void handleMessage(Message msg) {
         switch (msg.what) {
@@ -87,14 +89,17 @@ public class MainActivity extends AppCompatActivity
 
         mainActivityHandler = new MainActivityHandler(this);
 
-        initStartPage();
+        if (showPageStart) {
+            showPageStart = false;
+            initStartPage();
+        }
 
         initViewPage();
     }
 
     private void initStartPage() {
         binding.mainPageStart.mainRelative.setVisibility(View.VISIBLE);
-        mainActivityHandler.sendEmptyMessageDelayed(MESSAGE_SHOW_START_PAGE, 1 * 1000);
+        mainActivityHandler.sendEmptyMessageDelayed(MESSAGE_SHOW_START_PAGE, 1000);
     }
 
     private void initView() {
@@ -139,7 +144,11 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public void onPageSelected(int position) {
-
+            if (position == 2) {
+                binding.mainAppBar.mainFab.show();
+            } else {
+                binding.mainAppBar.mainFab.hide();
+            }
         }
 
         @Override
