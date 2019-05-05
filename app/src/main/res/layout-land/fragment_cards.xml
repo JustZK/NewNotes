@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/main_background"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <android.support.v4.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="@color/main_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <include layout="@layout/card_main_1" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+            <include
+                android:id="@+id/fragment_card_main_1"
+                layout="@layout/card_main_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/main_card_margin_horizontal_big_activity"
+                android:layout_marginTop="@dimen/text_margin_small"
+                android:layout_marginEnd="@dimen/text_margin_small"
+                android:layout_marginBottom="@dimen/text_margin"
+                app:layout_constraintEnd_toStartOf="@id/fragment_card_main_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:onClickListener="@{onClickListener}" />
+
+            <include
+                android:id="@+id/fragment_card_main_2"
+                layout="@layout/card_main_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_small"
+                android:layout_marginTop="@dimen/text_margin_small"
+                android:layout_marginEnd="@dimen/main_card_margin_horizontal_big_activity"
+                android:layout_marginBottom="@dimen/text_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fragment_card_main_1"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:onClickListener="@{onClickListener}" />
+
+            <include
+                android:id="@+id/fragment_card_main_4_1"
+                layout="@layout/card_main_4_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/main_card_margin_horizontal_big_activity"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginEnd="@dimen/text_margin_small"
+                android:layout_marginBottom="@dimen/text_margin"
+                app:layout_constraintEnd_toStartOf="@id/fragment_card_main_4_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_main_1_1"
+                bind:onClickListener="@{onClickListener}" />
+
+            <include
+                android:id="@+id/fragment_card_main_4_2"
+                layout="@layout/card_main_4_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_margin_small"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginEnd="@dimen/main_card_margin_horizontal_big_activity"
+                android:layout_marginBottom="@dimen/text_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fragment_card_main_4_1"
+                app:layout_constraintTop_toBottomOf="@+id/card_main_1_2"
+                bind:onClickListener="@{onClickListener}" />
+
+            <include
+                android:id="@+id/fragment_card_main_3"
+                layout="@layout/card_main_3"
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="@dimen/main_card_margin_horizontal_big_activity"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginEnd="@dimen/text_margin_small"
+                android:layout_marginBottom="@dimen/text_margin_small"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_main_1_4_1"
+                bind:onClickListener="@{onClickListener}" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

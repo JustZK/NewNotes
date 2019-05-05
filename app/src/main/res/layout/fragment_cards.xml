@@ -22,10 +22,12 @@
             android:orientation="vertical">
 
             <include
+                android:id="@+id/fragment_card_main_1"
                 layout="@layout/card_main_1"
                 bind:onClickListener="@{onClickListener}" />
 
             <include
+                android:id="@+id/fragment_card_main_2"
                 layout="@layout/card_main_2"
                 bind:onClickListener="@{onClickListener}" />
 
@@ -34,12 +36,22 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <include layout="@layout/card_main_4_1" />
+                <include
+                    android:id="@+id/fragment_card_main_4_1"
+                    layout="@layout/card_main_4_1"
+                    bind:onClickListener="@{onClickListener}" />
 
-                <include layout="@layout/card_main_4_2" />
+                <include
+                    android:id="@+id/fragment_card_main_4_2"
+                    layout="@layout/card_main_4_2"
+                    bind:onClickListener="@{onClickListener}" />
+
             </LinearLayout>
 
-            <include layout="@layout/card_main_3" />
+            <include
+                android:id="@+id/fragment_card_main_3"
+                layout="@layout/card_main_3"
+                bind:onClickListener="@{onClickListener}" />
 
             <!--<include layout="@layout/ad_banner_main" />-->
 

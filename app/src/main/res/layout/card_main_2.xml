@@ -30,7 +30,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/main_card_2_iv"
+                android:id="@+id/card_main_2_iv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -42,7 +42,7 @@
                 style="@style/TextAppearance.AppCompat.Large"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/main_card_2_iv"
+                android:layout_alignBottom="@id/card_main_2_iv"
                 android:layout_margin="@dimen/card_title_margin"
                 android:text="@string/main_card_title"
                 android:textColor="@color/white" />
@@ -62,7 +62,8 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"
                     android:padding="8dp"
-                    android:src="@drawable/ic_share_black_24dp" />
+                    android:src="@drawable/ic_share_black_24dp"
+                    android:onClick="@{onClickListener}"/>
 
                 <ImageView
                     android:id="@+id/main_card2_bookmark_iv"
@@ -73,7 +74,8 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"
                     android:padding="8dp"
-                    android:src="@drawable/ic_bookmark_border_black_24dp" />
+                    android:src="@drawable/ic_bookmark_border_black_24dp"
+                    android:onClick="@{onClickListener}"/>
 
                 <ImageView
                     android:id="@+id/main_card2_favorite_iv"
@@ -84,7 +86,8 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:clickable="true"
                     android:padding="8dp"
-                    android:src="@drawable/ic_favorite_border_black_24dp" />
+                    android:src="@drawable/ic_favorite_border_black_24dp"
+                    android:onClick="@{onClickListener}"/>
             </RelativeLayout>
 
 

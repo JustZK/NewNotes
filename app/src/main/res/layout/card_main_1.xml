@@ -29,7 +29,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/main_card_1_iv"
+                android:id="@+id/card_main_1_iv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -42,7 +42,7 @@
                 style="@style/TextAppearance.AppCompat.Large"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/main_card_1_iv"
+                android:layout_below="@id/card_main_1_iv"
                 android:layout_marginStart="@dimen/card_title_margin"
                 android:layout_marginTop="@dimen/card_title_margin_top"
                 android:layout_marginEnd="@dimen/card_title_margin"
