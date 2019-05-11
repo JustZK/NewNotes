@@ -1,6 +1,7 @@
 package com.notes.zk.newnotes.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.Handler;
@@ -193,21 +194,13 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        Intent intent = new Intent();
+        if (id == R.id.nav_about) {
+            intent.setClass(this, AboutActivity.class);
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
-
+        startActivity(intent);
         binding.mainDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
