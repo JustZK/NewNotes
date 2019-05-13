@@ -29,6 +29,7 @@ import com.bumptech.glide.Glide;
 import com.notes.zk.newnotes.R;
 import com.notes.zk.newnotes.adapter.FragmentAdapter;
 import com.notes.zk.newnotes.databinding.ActivityMainBinding;
+import com.notes.zk.newnotes.databinding.NavHeaderMainBinding;
 import com.notes.zk.newnotes.fragment.CardsFragment;
 import com.notes.zk.newnotes.fragment.DialogsFragment;
 import com.notes.zk.newnotes.fragment.WidgetsFragment;
@@ -85,6 +86,9 @@ public class MainActivity extends AppCompatActivity
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.setOnClickListener(this);
         binding.mainNavView.setNavigationItemSelectedListener(this);
+
+        NavHeaderMainBinding navHeaderMainBinding = NavHeaderMainBinding.bind(binding.mainNavView.getHeaderView(0));
+        navHeaderMainBinding.setOnClickListener(this);
 
         initView();
 
@@ -176,14 +180,12 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.action_about:
+                Intent intent = new Intent(this, AboutActivity.class);
+                startActivity(intent);
+                break;
         }
 
         return super.onOptionsItemSelected(item);
@@ -227,6 +229,11 @@ public class MainActivity extends AppCompatActivity
             case R.id.main_fab:
                 Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                break;
+            case R.id.nav_header:
+                Snackbar.make(v, "未完成", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                binding.mainDrawerLayout.closeDrawer(GravityCompat.START);
                 break;
         }
     }
