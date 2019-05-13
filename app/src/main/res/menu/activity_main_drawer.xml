@@ -3,23 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="none">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_recycler_and_swipe_refresh"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="@string/nav_recycler_view" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_scrolling"
+            android:icon="@drawable/ic_file_download_black_24dp"
+            android:title="@string/nav_scrolling" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_full_screen"
+            android:icon="@drawable/ic_fullscreen_black_24dp"
+            android:title="@string/nav_fullscreen" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_bottom_navigation"
+            android:icon="@drawable/ic_more_horiz_black_24dp"
+            android:title="@string/nav_bottom_navigation" />
+        <item
+            android:id="@+id/nav_bottom_appbar"
+            android:icon="@drawable/ic_bottom_appbar"
+            android:title="@string/nav_bottom_appbar" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/nav_settings" />
     </group>
 
     <item android:title="@string/app_name">

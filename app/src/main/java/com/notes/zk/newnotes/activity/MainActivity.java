@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity
     private boolean showPageStart = true;
 
     private MainActivityHandler mainActivityHandler;
+
     private void handleMessage(Message msg) {
         switch (msg.what) {
             case MESSAGE_SHOW_DRAWER_LAYOUT:
@@ -181,7 +182,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_about:
                 Intent intent = new Intent(this, AboutActivity.class);
                 startActivity(intent);
@@ -194,13 +195,17 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
         Intent intent = new Intent();
-        if (id == R.id.nav_about) {
-            intent.setClass(this, AboutActivity.class);
-        } else if (id == R.id.nav_gallery) {
-
+        switch (item.getItemId()) {
+            case R.id.nav_about:
+                intent.setClass(this, AboutActivity.class);
+                break;
+            case R.id.nav_scrolling:
+                intent.setClass(this, ScrollingActivity.class);
+                break;
+            default:
+                intent.setClass(this, AboutActivity.class);
+                break;
         }
         startActivity(intent);
         binding.mainDrawerLayout.closeDrawer(GravityCompat.START);
