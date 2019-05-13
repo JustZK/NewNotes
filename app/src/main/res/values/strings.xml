@@ -142,5 +142,26 @@
     <string name="nav_settings">设置</string>
     <string name="nav_bottom_appbar">底部 App Bar</string>
     <string name="label_scrolling">Scrolling</string>
+    <string name="settings_category_basic">基本设置</string>
+    <string name="settings_category_advanced">高级设置</string>
+    <string name="settings_category_other">其他设置</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="settings_switch_preference_title">切换首选项</string>
+    <string name="settings_switch_preference_summary">切换首选项描述</string>
+    <string name="settings_check_box_preference_title">复选框首选项</string>
+    <string name="settings_edit_text_preference_title">编辑文本首选项</string>
+    <string name="settings_edit_text_preference_default_value">材料设计</string>
+    <string name="settings_list_preference_dialog_title">列出首选项</string>
+    <string name="settings_list_preference_title">列出首选项</string>
+    <string name="settings_multi_select_list_preference_dialog_title">多选列表首选项</string>
+    <string name="settings_multi_select_list_preference_title">多选列表首选项</string>
+    <string name="settings_preference_click_title">在首选项单击侦听器</string>
+    <string name="settings_preference_click_to_activity">点击跳转Activity</string>
+    <string name="pref_title_system_sync_settings">账户同步设置</string>
+    <string name="pref_title_new_message_notifications">消息通知</string>
+    <string name="pref_title_ringtone">铃声</string>
+    <string name="pref_ringtone_silent">静音</string>
+    <string name="pref_title_vibrate">震动</string>
+    <string name="pref_on_preference_click">onPreferenceClick</string>
 
 </resources>
