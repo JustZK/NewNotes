@@ -1,17 +1,21 @@
 <resources>
     <string name="app_name">NewNotes</string>
-    <string name="navigation_drawer_open">打开导航抽屉</string>
-    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="app_designed_by">Designed by ZhuKun</string>
 
     <string name="ok">好的</string>
     <string name="cancel">取消</string>
     <string name="sure">确认</string>
 
-    <string name="action_settings">设置</string>
-    <string name="app_designed_by">Designed by ZhuKun</string>
+    <!-- Main -->
     <string name="tab_title_main_1">卡片</string>
     <string name="tab_title_main_2">对话框</string>
     <string name="tab_title_main_3">控件</string>
+
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <!-- Main -->
+
+    <!-- Card -->
     <string name="main_card_title">标题在这里</string>
     <string name="main_card_title_short">标题</string>
     <string name="main_card_details">副标题</string>
@@ -21,7 +25,9 @@
     <string name="main_flat_button_1_clicked">平面按钮 1</string>
     <string name="main_flat_button_2_clicked">平面按钮 2</string>
     <string name="hello_blank_fragment">你好空白片段</string>
+    <!-- Card -->
 
+    <!-- Dialog -->
     <string name="simple_dialog">简单对话框</string>
     <string name="dialog_rounded_shape">圆角对话框</string>
     <string name="main_dialog_simple_title">有标题的简单对话框</string>
@@ -34,9 +40,12 @@
     <string name="main_dialog_bottom">底部对话框</string>
     <string name="main_dialog_fullscreen">全屏对话框</string>
     <string name="main_popup_menu">Popup Menu</string>
-    <string name="main_dialog_simple_message">材料的比拟是合理空间和运动系统的统一理论。\\n这种材料以触觉现实为基础，灵感来源于纸和油墨的研究，但技术先进，具有开放的想象力和神奇性。</string>
+    <string name="main_dialog_simple_message">材料的比拟是合理空间和运动系统的统一理论。
+        \n这种材料以触觉现实为基础，灵感来源于纸和油墨的研究，
+        但技术先进，具有开放的想象力和神奇性。</string>
+    <!-- Dialog -->
 
-
+    <!-- Widget -->
     <string name="main_widget_toggle_button">切换按钮</string>
     <string name="main_widget_switch">开关</string>
     <string name="main_widget_check_box">复选框</string>
@@ -56,6 +65,9 @@
     <string name="main_widget_data_picker">日期选择器</string>
     <string name="main_widget_time_picker">时间选择器</string>
     <string name="about_card1_welcome_message">嗨！很高兴见到你！</string>
+    <!-- Widget -->
+
+    <!-- About -->
     <string name="about_google_play">评价 (Google play)</string>
     <string name="about_email">反馈 (E-mail)</string>
     <string name="about_git_hub">源代码 (GitHub)</string>
@@ -72,6 +84,10 @@
     <string name="feature_is_not_completed">对不起，该功能未完成。</string>
     <string name="author">Zhu Kun</string>
     <string name="author_email">zk199519@gmail.com</string>
+    <!-- About -->
+
+    <!-- Scrolling -->
+    <string name="label_scrolling">Scrolling</string>
     <string name="large_text">
         材料就是比喻。        
         \n\n物质隐喻是合理化空间和运动系统的统一理论。    
@@ -135,13 +151,20 @@
         \n\n避免高程干扰。
         \n\n具有响应性高程的组件在它们之间移动时可能会遇到其他组件
         他们的静止高度和动态高程偏移。</string>
+    <!-- Scrolling -->
+
+    <!-- nav -->
     <string name="nav_recycler_view">Recycler View</string>
     <string name="nav_scrolling">Scrolling</string>
     <string name="nav_fullscreen">全屏</string>
     <string name="nav_bottom_navigation">底部导航栏</string>
     <string name="nav_settings">设置</string>
     <string name="nav_bottom_appbar">底部 App Bar</string>
-    <string name="label_scrolling">Scrolling</string>
+    <!-- nav -->
+
+
+    <!-- Settings -->
+    <string name="action_settings">设置</string>
     <string name="settings_category_basic">基本设置</string>
     <string name="settings_category_advanced">高级设置</string>
     <string name="settings_category_other">其他设置</string>
@@ -163,5 +186,21 @@
     <string name="pref_ringtone_silent">静音</string>
     <string name="pref_title_vibrate">震动</string>
     <string name="pref_on_preference_click">onPreferenceClick</string>
+    <!-- Settings -->
+
+    <!-- login -->
+    <string name="label_login">登陆</string>
+    <string name="prompt_email">电子邮件</string>
+    <string name="prompt_password">密码（可选）</string>
+    <string name="action_sign_in">登录或注册</string>
+    <string name="action_sign_in_short">登陆</string>
+    <string name="error_invalid_email">此电子邮件地址无效</string>
+    <string name="error_invalid_password">此密码太短</string>
+    <string name="error_incorrect_password">此密码不正确</string>
+    <string name="error_field_required">这是必填栏</string>
+    <string name="permission_rationale">提供电子邮件需要联系人权限落成。</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="register">注册</string>
+    <!-- login -->
 
 </resources>

@@ -239,9 +239,9 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
                 break;
             case R.id.nav_header:
-                Snackbar.make(v, "未完成", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                binding.mainDrawerLayout.closeDrawer(GravityCompat.START);
+                Intent intent = new Intent();
+                intent.setClass(this, LoginActivity.class);
+                startActivity(intent);
                 break;
         }
     }
