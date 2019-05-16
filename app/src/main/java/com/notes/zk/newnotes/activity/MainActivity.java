@@ -206,6 +206,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_full_screen:
                 intent.setClass(this, FullscreenActivity.class);
                 break;
+            case R.id.nav_bottom_navigation:
+                intent.setClass(this, BottomNavigationActivity.class);
+                break;
             default:
                 intent.setClass(this, AboutActivity.class);
                 break;
