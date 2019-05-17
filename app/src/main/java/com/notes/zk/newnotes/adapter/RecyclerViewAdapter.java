@@ -103,7 +103,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             AlphaAnimation aa = new AlphaAnimation(0.1f, 1.0f);
             aa.setDuration(400);
 
-            recyclerViewHolder.tv_recycler_item_1.append(String.valueOf(mItems.get(position)));
+            recyclerViewHolder.tv_recycler_item_1.setText( context.getResources().getString(R.string.tv_recycler_item_1) + String.valueOf(mItems.get(position)));
 
             recyclerViewHolder.rela_round.startAnimation(aa);
 

@@ -26,6 +26,8 @@ import java.util.List;
 public class RecyclerViewActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityRecyclerViewBinding binding;
 
+    private boolean loading;
+
     private List<Integer> data;
     private RecyclerViewAdapter adapter;
 
@@ -130,16 +132,16 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
             super.onScrolled(recyclerView, dx, dy);
 
             final LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-//            if (!loading && linearLayoutManager.getItemCount() == (linearLayoutManager.findLastVisibleItemPosition() + 1)) {
-//
-//                new Handler().postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
+            if (!loading && linearLayoutManager.getItemCount() == (linearLayoutManager.findLastVisibleItemPosition() + 1)) {
+                loading = true;
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
 //                        if (loadTimes <= 5) {
-//                            adapter.removeFooter();
-//                            loading = false;
-//                            adapter.addItems(data);
-//                            adapter.addFooter();
+                            adapter.removeFooter();
+                            loading = false;
+                            adapter.addItems(data);
+                            adapter.addFooter();
 //                            loadTimes++;
 //                        } else {
 //                            adapter.removeFooter();
@@ -152,11 +154,11 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
 //                                }
 //                            }).show();
 //                        }
-//                    }
-//                }, 1500);
-//
-//                loading = true;
-//            }
+                    }
+                }, 1500);
+
+
+            }
         }
     };
 
