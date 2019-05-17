@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".activity.RecyclerViewActivity">
+
+        <include
+            android:id="@+id/content_recycler_view"
+            layout="@layout/content_recycler_view"
+            bind:onClickListener="@{onClickListener}"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/recycler_view_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add_white_24dp"
+            app:layout_behavior="com.notes.zk.newnotes.view.FabBehavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

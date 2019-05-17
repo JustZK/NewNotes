@@ -203,4 +203,16 @@
     <string name="register">注册</string>
     <!-- login -->
 
+    <!-- login -->
+    <string name="label_recycler_view">Recycler View</string>
+    <!-- login -->
+
+    <!-- recycle View -->
+    <string name="item_swipe_dismissed">已删除</string>
+    <string name="item_swipe_undo">撤销</string>
+    <string name="tv_recycler_item_1">下拉刷新</string>
+    <string name="tv_recycler_item_2">左右滑动删除条目</string>
+    <string name="tv_recycler_item_3">上下拖动改变条目位置</string>
+    <!-- recycle View -->
+
 </resources>

@@ -177,4 +177,10 @@
     <string name="prompt_email">Email</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="register">Register</string>
+    <string name="label_recycler_view">Recycler View</string>
+    <string name="item_swipe_dismissed">Dismissed</string>
+    <string name="item_swipe_undo">Undo</string>
+    <string name="tv_recycler_item_1">Swipe down to refresh</string>
+    <string name="tv_recycler_item_2">Swipe left or right to dismiss it</string>
+    <string name="tv_recycler_item_3">Drag up or down to move it</string>
 </resources>

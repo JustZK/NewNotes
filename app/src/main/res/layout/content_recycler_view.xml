@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recycler_view_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.RecyclerViewActivity"
+        tools:showIn="@layout/activity_recycler_view">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_background"
+            android:paddingStart="@dimen/zero_horizontal_margin_big_activity"
+            android:paddingEnd="@dimen/zero_horizontal_margin_big_activity" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</layout>
