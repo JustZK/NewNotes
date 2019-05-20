@@ -176,4 +176,11 @@
     <string name="tv_recycler_item_1">下拉刷新</string>
     <string name="tv_recycler_item_2">左右滑动删除条目</string>
     <string name="tv_recycler_item_3">上下拖动改变条目位置</string>
+    <string name="label_share_view">分享视图</string>
+    <string name="share_view_press_it">你可以点按它</string>
+    <string name="change_bottom_bar_text">更改底部工具栏属性：</string>
+    <string name="right_align">居右</string>
+    <string name="zero_radius">无圆角</string>
+    <string name="zero_margin">无边距</string>
+    <string name="show_title">显示标题</string>
 </resources>

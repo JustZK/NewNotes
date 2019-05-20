@@ -183,4 +183,11 @@
     <string name="tv_recycler_item_1">Swipe down to refresh</string>
     <string name="tv_recycler_item_2">Swipe left or right to dismiss it</string>
     <string name="tv_recycler_item_3">Drag up or down to move it</string>
+    <string name="label_share_view">Share View</string>
+    <string name="share_view_press_it">You can press it</string>
+    <string name="change_bottom_bar_text">Change bottom bar cutout properties:</string>
+    <string name="right_align">Right Align</string>
+    <string name="zero_radius">Zero Radius</string>
+    <string name="zero_margin">Zero Margin</string>
+    <string name="show_title">Show Title</string>
 </resources>

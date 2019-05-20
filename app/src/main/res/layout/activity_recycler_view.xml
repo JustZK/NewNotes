@@ -30,7 +30,8 @@
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
             android:src="@drawable/ic_add_white_24dp"
-            app:layout_behavior="com.notes.zk.newnotes.view.FabBehavior" />
+            app:layout_behavior="com.notes.zk.newnotes.view.FabBehavior"
+            android:onClick="@{onClickListener}"/>
 
     </android.support.design.widget.CoordinatorLayout>
 </layout>

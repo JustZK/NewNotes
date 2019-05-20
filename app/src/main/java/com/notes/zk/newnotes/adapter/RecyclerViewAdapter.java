@@ -19,6 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.notes.zk.newnotes.R;
+import com.notes.zk.newnotes.activity.ShareViewActivity;
 import com.notes.zk.newnotes.callback.onMoveAndSwipedListener;
 
 import java.util.ArrayList;
@@ -112,10 +113,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             recyclerViewHolder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    Intent intent = new Intent(context, ShareViewActivity.class);
-//                    intent.putExtra("color", color);
-//                    context.startActivity(intent, ActivityOptions.makeSceneTransitionAnimation
-//                            ((Activity) context, recyclerViewHolder.rela_round, "shareView").toBundle());
+                    Intent intent = new Intent(context, ShareViewActivity.class);
+                    context.startActivity(intent, ActivityOptions.makeSceneTransitionAnimation
+                            ((Activity) context, recyclerViewHolder.rela_round, "shareView").toBundle());
                 }
             });
         }

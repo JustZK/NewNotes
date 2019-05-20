@@ -60,7 +60,7 @@ public class RecyclerViewActivity extends AppCompatActivity implements View.OnCl
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.recycler_view_fab:
-
+                Snackbar.make(v, getString(R.string.feature_is_not_completed), Snackbar.LENGTH_SHORT).show();
                 break;
         }
     }

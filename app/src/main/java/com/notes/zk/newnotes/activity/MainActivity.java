@@ -212,6 +212,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_recycler_and_swipe_refresh:
                 intent.setClass(this, RecyclerViewActivity.class);
                 break;
+            case R.id.nav_bottom_appbar:
+                intent.setClass(this, BottomAppBarActivity.class);
+                break;
             default:
                 intent.setClass(this, AboutActivity.class);
                 break;
