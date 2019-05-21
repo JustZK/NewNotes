@@ -190,4 +190,11 @@
     <string name="zero_radius">Zero Radius</string>
     <string name="zero_margin">Zero Margin</string>
     <string name="show_title">Show Title</string>
+    <string name="main_widget_material_button">Material Buttons</string>
+    <string name="main_widget_chip">Material Buttons</string>
+    <string name="main_widget_chip_1">Checkable</string>
+    <string name="main_widget_chip_2">Stroke</string>
+    <string name="main_widget_chip_3">Corner Radius</string>
+    <string name="main_widget_chip_4">Chip Icon</string>
+    <string name="main_widget_chip_5">Close Icon</string>
 </resources>

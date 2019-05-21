@@ -183,4 +183,11 @@
     <string name="zero_radius">无圆角</string>
     <string name="zero_margin">无边距</string>
     <string name="show_title">显示标题</string>
+    <string name="main_widget_chip_5">关闭图标</string>
+    <string name="main_widget_chip_4">芯片图标</string>
+    <string name="main_widget_chip_3">角半径</string>
+    <string name="main_widget_chip_2">行程</string>
+    <string name="main_widget_chip_1">可勾选</string>
+    <string name="main_widget_chip">芯片</string>
+    <string name="main_widget_material_button">材质按钮</string>
 </resources>

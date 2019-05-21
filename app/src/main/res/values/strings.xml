@@ -65,6 +65,13 @@
     <string name="main_widget_data_picker">日期选择器</string>
     <string name="main_widget_time_picker">时间选择器</string>
     <string name="about_card1_welcome_message">嗨！很高兴见到你！</string>
+    <string name="main_widget_material_button">材质按钮</string>
+    <string name="main_widget_chip">芯片</string>
+    <string name="main_widget_chip_1">可勾选</string>
+    <string name="main_widget_chip_2">行程</string>
+    <string name="main_widget_chip_3">角半径</string>
+    <string name="main_widget_chip_4">芯片图标</string>
+    <string name="main_widget_chip_5">关闭图标</string>
     <!-- Widget -->
 
     <!-- About -->

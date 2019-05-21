@@ -17,6 +17,129 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/main_widget_material_button"
+            android:textColor="@color/colorPrimary" />
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:clickable="true"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/main_widget_material_button"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp" />
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:clickable="true"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/main_widget_material_button"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/white"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="2dp" />
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="@string/main_widget_material_button"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_photo_black_24dp"
+            app:rippleColor="@color/color_ripple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="@string/main_widget_toggle_button"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="@string/main_widget_chip"
+            android:textColor="@color/colorPrimary" />
+
+        <android.support.design.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            app:chipSpacing="16dp"
+            app:singleSelection="false">
+
+            <android.support.design.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:text="@string/main_widget_chip_1"
+                android:textAppearance="?android:attr/textAppearance"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <android.support.design.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:text="@string/main_widget_chip_2"
+                android:textAppearance="?android:attr/textAppearance"
+                app:chipStrokeColor="@color/colorAccent"
+                app:chipStrokeWidth="2dp" />
+
+            <android.support.design.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:text="@string/main_widget_chip_3"
+                android:textAppearance="?android:attr/textAppearance"
+                app:checkedIconVisible="false"
+                app:chipCornerRadius="4dp" />
+
+            <android.support.design.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/main_widget_chip_4"
+                android:textAppearance="?android:attr/textAppearance"
+                app:chipIcon="@drawable/ic_photo_black_24dp"
+                app:chipIconEnabled="true"
+                app:chipIconTint="@color/gray_deep"
+                app:iconStartPadding="8dp"
+                app:rippleColor="@color/colorAccent" />
+
+            <android.support.design.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/main_widget_chip_5"
+                android:textAppearance="?android:attr/textAppearance"
+                app:closeIconEnabled="true"
+                app:rippleColor="@color/colorAccent" />
+        </android.support.design.chip.ChipGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/main_widget_toggle_button"
             android:textColor="@color/colorPrimary" />
 
