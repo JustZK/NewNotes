@@ -48,18 +48,22 @@
         <activity
             android:name=".activity.LoginActivity"
             android:label="@string/label_login" />
-        <activity android:name=".activity.FullscreenActivity"
+        <activity
+            android:name=".activity.FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".activity.RecyclerViewActivity"
             android:label="@string/label_recycler_view" />
-        <activity android:name=".activity.BottomAppBarActivity"
-            android:theme="@style/AppTheme.NoActionBar_StatusBar"/>
+        <activity
+            android:name=".activity.BottomAppBarActivity"
+            android:theme="@style/AppTheme.NoActionBar_StatusBar" />
         <activity
             android:name=".activity.ShareViewActivity"
             android:label="@string/label_share_view"
             android:theme="@style/AppTheme.NoActionBar_StatusBar" />
+        <activity android:name=".activity.SettingsTwoActivity"
+            android:label="@string/action_settings"/>
     </application>
 
 </manifest>

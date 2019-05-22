@@ -9,4 +9,44 @@
         <attr name="metaButtonBarButtonStyle" format="reference" />
     </declare-styleable>
 
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingBasic">
+        <attr name="settingIcon" format="string"/>
+        <attr name="settingIconColor" format="integer"/>
+        <attr name="settingIconBackground" format="reference"/>
+        <attr name="settingTitle" format="reference"/>
+        <attr name="settingCaption" format="reference"/>
+        <attr name="settingMinApi" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingWithSwitchView">
+        <attr name="settingIcon"/>
+        <attr name="settingIconColor"/>
+        <attr name="settingIconBackground"/>
+        <attr name="settingTitle"/>
+        <attr name="settingCaption"/>
+        <attr name="settingMinApi"/>
+        <attr name="settingDefaultValue" format="boolean"/>
+        <attr name="settingPreferenceKey" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressbar">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="ringBackgroundImage" format="reference"/>
+        <attr name="ringBackgroundColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
 </resources>
