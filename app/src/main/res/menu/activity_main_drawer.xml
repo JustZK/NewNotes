@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_format_list_bulleted_black_24dp"
             android:title="@string/nav_recycler_view" />
         <item
+            android:id="@+id/nav_cabinet_floor_plan"
+            android:icon="@drawable/ic_box"
+            android:title="@string/nav_box_view" />
+        <item
             android:id="@+id/nav_scrolling"
             android:icon="@drawable/ic_file_download_black_24dp"
             android:title="@string/nav_scrolling" />

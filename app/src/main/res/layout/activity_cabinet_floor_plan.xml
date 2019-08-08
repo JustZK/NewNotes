@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -9,13 +10,12 @@
 
     </data>
 
-    <android.support.design.widget.CoordinatorLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.notes.zk.newnotes.activity.MainActivity"
-        android:id="@+id/main_app_bar_cl">
+        android:orientation="vertical"
+        tools:context=".activity.CabinetFloorPlanActivity">
 
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:theme="@style/AppTheme.AppBarOverlay">
 
             <android.support.v7.widget.Toolbar
-                android:id="@+id/main_app_bar_tb"
+                android:id="@+id/cabinet_floor_plan_tb"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
@@ -31,29 +31,23 @@
                 app:popupTheme="@style/AppTheme.PopupOverlay" />
 
             <android.support.design.widget.TabLayout
-                android:id="@+id/main_app_bar_tl"
+                android:id="@+id/cabinet_floor_plan_tl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:tabIndicatorColor="@color/colorAccent" />
+                android:background="?attr/colorPrimary"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabMode="scrollable" />
 
         </android.support.design.widget.AppBarLayout>
 
+
         <android.support.v4.view.ViewPager
-            android:id="@+id/main_app_bar_vp"
+            android:id="@+id/cabinet_floor_plan_vp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/main_fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            android:onClick="@{onClickListener}"
-            android:src="@drawable/ic_add_white_24dp"
-            android:visibility="gone"
-            app:layout_scrollFlags="scroll|enterAlways" />
+    </LinearLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
 </layout>

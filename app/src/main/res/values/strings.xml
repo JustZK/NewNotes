@@ -162,6 +162,7 @@
 
     <!-- nav -->
     <string name="nav_recycler_view">Recycler View</string>
+    <string name="nav_box_view">柜体平面图</string>
     <string name="nav_scrolling">Scrolling</string>
     <string name="nav_fullscreen">全屏</string>
     <string name="nav_bottom_navigation">底部导航栏</string>

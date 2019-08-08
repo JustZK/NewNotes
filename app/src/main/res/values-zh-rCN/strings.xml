@@ -190,4 +190,5 @@
     <string name="main_widget_chip_1">可勾选</string>
     <string name="main_widget_chip">芯片</string>
     <string name="main_widget_material_button">材质按钮</string>
+    <string name="nav_box_view">柜体平面图</string>
 </resources>
