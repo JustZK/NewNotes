@@ -209,13 +209,13 @@
     <string name="permission_rationale">提供电子邮件需要联系人权限落成。</string>
     <string name="forgot_password">忘记密码?</string>
     <string name="register">注册</string>
-    <!-- login -->
-
-    <!-- login -->
-    <string name="label_recycler_view">Recycler View</string>
+    <string name="qq">QQ</string>
+    <string name="i_am_qq">I\'M QQ \n每一天 \n乐在沟通</string>
+    <string name="welcome">Welcome</string>
     <!-- login -->
 
     <!-- recycle View -->
+    <string name="label_recycler_view">Recycler View</string>
     <string name="item_swipe_dismissed">已删除</string>
     <string name="item_swipe_undo">撤销</string>
     <string name="tv_recycler_item_1">下拉刷新</string>

@@ -5,6 +5,10 @@
 
     <group android:checkableBehavior="none">
         <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="@string/welcome" />
+        <item
             android:id="@+id/nav_recycler_and_swipe_refresh"
             android:icon="@drawable/ic_format_list_bulleted_black_24dp"
             android:title="@string/nav_recycler_view" />

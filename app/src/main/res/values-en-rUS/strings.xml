@@ -198,4 +198,7 @@
     <string name="main_widget_chip_4">Chip Icon</string>
     <string name="main_widget_chip_5">Close Icon</string>
     <string name="nav_box_view">Cabinet floor plan</string>
+    <string name="i_am_qq">I\'am QQ \nEvery day \nhappy to communicate</string>
+    <string name="qq">QQ</string>
+    <string name="welcome">Welcome</string>
 </resources>

@@ -191,4 +191,7 @@
     <string name="main_widget_chip">芯片</string>
     <string name="main_widget_material_button">材质按钮</string>
     <string name="nav_box_view">柜体平面图</string>
+    <string name="i_am_qq">"I'M QQ  \n每一天 \n乐在沟通"</string>
+    <string name="qq">QQ</string>
+    <string name="welcome">欢迎</string>
 </resources>

@@ -194,6 +194,9 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         Intent intent = new Intent();
         switch (item.getItemId()) {
+            case R.id.nav_login:
+                intent.setClass(this, LoginTwoActivity.class);
+                break;
             case R.id.nav_about:
                 intent.setClass(this, AboutActivity.class);
                 break;

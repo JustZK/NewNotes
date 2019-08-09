@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginTwoActivity">
+
+        <SurfaceView
+            android:id="@+id/login_two_bg_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/login_two_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pkn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/title_medium_l_spacing"
+                    android:layout_height="@dimen/title_medium_l_spacing"
+                    android:layout_margin="@dimen/medium_spacing"
+                    app:srcCompat="@drawable/ic_qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qq"
+                    android:textColor="#f0ffffff"
+                    android:textSize="@dimen/super_super_big_more_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingStart="@dimen/super_big_lite_text"
+                android:text="@string/i_am_qq"
+                android:textColor="#f0ffffff"
+                android:textSize="@dimen/super_super_big_more_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/sub_medium_spacing_2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/login_two_login_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn"
+                    android:onClick="@{onClickListener}"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="@string/label_login"
+                    android:textColor="#f0ffffff"
+                    android:textSize="@dimen/sub_medium_big_text" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="@string/register"
+                    android:textColor="#f0ffffff"
+                    android:textSize="@dimen/sub_medium_big_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
