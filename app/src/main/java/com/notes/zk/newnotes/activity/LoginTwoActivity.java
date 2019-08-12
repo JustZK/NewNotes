@@ -16,10 +16,11 @@ import android.view.WindowManager;
 
 import com.notes.zk.newnotes.R;
 import com.notes.zk.newnotes.databinding.ActivityLoginTwoBinding;
+import com.notes.zk.newnotes.view.BaseSlideCloseActivity;
 
 import java.io.IOException;
 
-public class LoginTwoActivity extends AppCompatActivity implements View.OnClickListener{
+public class LoginTwoActivity extends BaseSlideCloseActivity implements View.OnClickListener{
     private ActivityLoginTwoBinding binding;
     private MediaPlayer mediaPlayer;
     private int mCurrentPosition = 0;
