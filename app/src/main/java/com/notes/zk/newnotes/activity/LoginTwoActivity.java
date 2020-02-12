@@ -135,6 +135,12 @@ public class LoginTwoActivity extends BaseSlideCloseActivity implements View.OnC
     }
 
     @Override
+    protected void onResume() {
+        hideBars();
+        super.onResume();
+    }
+
+    @Override
     protected void onStop() {
         super.onStop();
         if (mediaPlayer != null && mediaPlayer.isPlaying()) {

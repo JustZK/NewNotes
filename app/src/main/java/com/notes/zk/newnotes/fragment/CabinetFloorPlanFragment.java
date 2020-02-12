@@ -104,6 +104,7 @@ public class CabinetFloorPlanFragment extends Fragment {
                 return bean.getProportion();
             }
         });
+        manager.setSmoothScrollbarEnabled(false);
 //        binding.fragmentCabinetFloorRv.addItemDecoration(new SpaceItemDecoration());
         binding.fragmentCabinetFloorRv.setLayoutManager(manager);
         binding.fragmentCabinetFloorRv.setItemAnimator(new DefaultItemAnimator());
