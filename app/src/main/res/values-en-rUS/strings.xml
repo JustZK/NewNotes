@@ -201,4 +201,5 @@
     <string name="i_am_qq">I\'am QQ \nEvery day \nhappy to communicate</string>
     <string name="qq">QQ</string>
     <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
 </resources>

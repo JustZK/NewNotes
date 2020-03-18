@@ -231,5 +231,6 @@
     <string name="zero_radius">无圆角</string>
     <string name="zero_margin">无边距</string>
     <string name="show_title">显示标题</string>
+    <string name="login">登陆</string>
 
 </resources>
