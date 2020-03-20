@@ -197,6 +197,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_login:
                 intent.setClass(this, LoginTwoActivity.class);
                 break;
+            case R.id.nav_login_three:
+                intent.setClass(this, LoginThreeActivity.class);
+                break;
             case R.id.nav_about:
                 intent.setClass(this, AboutActivity.class);
                 break;
