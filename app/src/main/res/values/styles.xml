@@ -79,4 +79,42 @@
         <item name="android:wallpaperIntraCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
+    <style name="SecondaryText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+
+    <style name="SecondaryText.Dark">
+        <item name="android:textColor">@color/car_text_dark</item>
+    </style>
+
+    <style name="InputBox" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/md_grey_300</item>
+        <item name="boxStrokeWidth">@dimen/sign_in_input_box_stroke_width</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/sign_in_input_box_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/sign_in_input_box_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/sign_in_input_box_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/sign_in_input_box_radius</item>
+    </style>
+
+    <style name="CarButton" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:paddingStart">@dimen/button_padding</item>
+        <item name="android:paddingEnd">@dimen/button_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/default_button_background</item>
+        <item name="android:textAppearance">@style/SecondaryText.Dark</item>
+    </style>
+
+    <style name="CarButton.SignIn">
+        <item name="android:background">@drawable/sign_in_button_background</item>
+    </style>
+
+    <style name="CarButton.GoogleSignIn">
+        <item name="android:background">@drawable/google_sign_in_button_background</item>
+    </style>
+
 </resources>

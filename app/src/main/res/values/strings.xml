@@ -212,6 +212,10 @@
     <string name="qq">QQ</string>
     <string name="i_am_qq">I\'M QQ \n每一天 \n乐在沟通</string>
     <string name="welcome">Welcome</string>
+    <string name="sign_in_user_id_hint">Enter username</string>
+    <string name="password_hint">Enter password</string>
+    <string name="google_sign_in_button_label">Sign in with Google</string>
+    <string name="username_help_text">Forgot username? | Use phone app to sign in</string>
     <!-- login -->
 
     <!-- recycle View -->

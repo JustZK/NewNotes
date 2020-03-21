@@ -6,6 +6,8 @@
 
     <color name="background">#efeefe</color>
 
+    <color name="google_sign_in_button_background_color">#ffffffff</color>
+
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="gray">#999999</color>

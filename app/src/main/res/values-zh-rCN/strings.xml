@@ -195,4 +195,8 @@
     <string name="qq">QQ</string>
     <string name="welcome">欢迎</string>
     <string name="login">登陆</string>
+    <string name="sign_in_user_id_hint">Enter username</string>
+    <string name="username_help_text">Forgot username? | Use phone app to sign in</string>
+    <string name="google_sign_in_button_label">Sign in with Google</string>
+    <string name="password_hint">Enter password</string>
 </resources>

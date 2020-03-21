@@ -12,11 +12,133 @@
 
     </data>
 
-    <android.support.constraint.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/login_three_log_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/super_big_spacing"
+                android:adjustViewBounds="true"
+                android:maxHeight="@dimen/icon_max_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_zk_logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.Guideline
+                android:id="@+id/start_guideline"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="@dimen/sign_in_horizontal_start_guideline" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/end_guideline"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="370dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/login_three_identifier_container"
+                style="@style/InputBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_spacing"
+                android:hint="@string/sign_in_user_id_hint"
+                app:errorTextAppearance="@style/SecondaryText"
+                app:hintTextAppearance="@style/SecondaryText"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/login_three_log_iv"
+                app:layout_constraintWidth_max="@dimen/sign_in_text_max_width">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/login_three_identifier_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/sign_in_user_id_hint"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAppearance="@style/SecondaryText"
+                    android:textCursorDrawable="@null" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/login_three_password_container"
+                style="@style/InputBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sub_big_spacing"
+                android:hint="@string/password_hint"
+                app:errorTextAppearance="@style/SecondaryText"
+                app:hintTextAppearance="@style/SecondaryText"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/login_three_identifier_container"
+                app:layout_constraintWidth_max="@dimen/sign_in_text_max_width"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textAppearance="@style/SecondaryText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/phone_sign_in_button"
+                style="@style/CarButton.SignIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sign_in_button1_top_margin"
+                android:text="@string/action_sign_in"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/login_three_password_container"
+                app:layout_constraintWidth_max="@dimen/sign_in_button_max_width" />
+
+            <Button
+                android:id="@+id/google_sign_in_button"
+                style="@style/CarButton.GoogleSignIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sign_in_button2_top_margin"
+                android:drawableStart="@drawable/google_sign_in_button_logo"
+                android:text="@string/google_sign_in_button_label"
+                app:layout_constraintEnd_toEndOf="@id/end_guideline"
+                app:layout_constraintStart_toStartOf="@id/start_guideline"
+                app:layout_constraintTop_toBottomOf="@id/phone_sign_in_button"
+                app:layout_constraintWidth_max="@dimen/sign_in_button_max_width"
+                app:layout_goneMarginTop="@dimen/sign_in_button1_top_margin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/super_big_big_spacing"
+                android:layout_marginBottom="@dimen/sign_in_footer_bottom_margin"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:maxWidth="@dimen/sign_in_text_max_width"
+                android:text="@string/username_help_text"
+                android:textAppearance="@style/SecondaryText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/google_sign_in_button" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
 </layout>

@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.android.vending.BILLING" />
 
@@ -19,6 +18,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.LoginThreeActivity"
             android:label="@string/login"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/DIY.SlideClose.Transparent.Theme"/>
         <activity
             android:name=".activity.LoginTwoActivity"
