@@ -227,6 +227,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_cabinet_floor_plan:
                 intent.setClass(this, CabinetFloorPlanActivity.class);
                 break;
+            case R.id.nav_secondary_list:
+                intent.setClass(this, SecondaryListActivity.class);
+                break;
             default:
                 intent.setClass(this, AboutActivity.class);
                 break;

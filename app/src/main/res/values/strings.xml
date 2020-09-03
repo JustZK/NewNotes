@@ -161,6 +161,7 @@
     <!-- Scrolling -->
 
     <!-- nav -->
+    <string name="nav_secondary_list">Secondary List</string>
     <string name="nav_recycler_view">Recycler View</string>
     <string name="nav_box_view">柜体平面图</string>
     <string name="nav_scrolling">Scrolling</string>

@@ -206,4 +206,5 @@
     <string name="username_help_text">Forgot username? | Use phone app to sign in</string>
     <string name="google_sign_in_button_label">Sign in with Google</string>
     <string name="password_hint">Enter password</string>
+    <string name="nav_secondary_list">Secondary List</string>
 </resources>
